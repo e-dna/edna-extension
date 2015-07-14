@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edna</title>
     <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/libs/jquery-2.1.1.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/routes.js"></script>
-    <script src="assets/js/angular.js"></script>
   </head>
 
   <style>
@@ -27,16 +26,37 @@
 
           <section class="block-list">
             <header>RECOMMENDED STORIES</header>
-            <ul>
+            <ul class="recommended-stories">
               <li>
-                <a href="#">
+                <a href="#" data-url="http://google.com/1">
                   <img src="http://fakeimg.pl/70x70" alt="">
                   Slam Book
                   <span class="block-list-label">7</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" data-url="http://google.com/21">
+                  <img src="http://fakeimg.pl/70x70" alt="">
+                  Foundation Chat
+                  <span class="block-list-label">2</span>
+                </a>
+              </li>
+              <li>
+                <a class="success" href="#">
+                  <img src="http://fakeimg.pl/70x70" alt="">
+                  LolCats
+                  <span class="block-list-label">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-url="http://google.com/3">
+                  <img src="http://fakeimg.pl/70x70" alt="">
+                  Slam Book
+                  <span class="block-list-label">7</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-url="http://google.com/4">
                   <img src="http://fakeimg.pl/70x70" alt="">
                   Foundation Chat
                   <span class="block-list-label">2</span>
@@ -56,7 +76,7 @@
       <div class="grid-block collapse medium-9 large-9 vertical">
         <div class="grid-block">
           <div class="grid-block small-12 medium-12 vertical">
-            <div class="grid-content">
+            <div class="grid-content grid-frames">
               <iframe src="http://hawttrends.appspot.com" frameborder="0" style="height: 100%; width: 100%; position: absolute; top:0px; left: 0px;"></iframe>
             </div>
           </div>
