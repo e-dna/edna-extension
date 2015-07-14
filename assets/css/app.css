@@ -3024,7 +3024,7 @@ meter {
       flex: 0 0 12.5%; } }
 @media only screen and (min-width: 75em) {
   .large-9 {
-    flex: 0 0 75%; }
+    flex: 0 0 78%; }
 
   .large-order-9 {
     order: 9; }
