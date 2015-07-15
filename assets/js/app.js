@@ -68,9 +68,9 @@ function generate_recirc_template(response, elN){
 
 
 function do_on_parsely_return(datas, keyword){
-  recirculation = '<div class="grid-block ng-scope"><h1>' + keyword + '</h1></div>';
+  recirculation = '<div class="grid-block ng-scope"><h1 class="grid-content">' + keyword + '</h1></div>';
   recirculation = recirculation + '<div class="grid-block small-up-1 medium-up-3 ng-scope text-center"><iframe style="  margin: 0 auto; background: white; height: 370px; width: 80%" src="http://www.google.com/trends/fetchComponent?q=' + keyword + '&cid=TIMESERIES_GRAPH_0&export=5"></iframe></div>';
-  recirculation = recirculation + '<div class="grid-block ng-scope"><h3>EDNA Recommends</h3></div>';
+  recirculation = recirculation + '<div class="grid-block ng-scope"><h3 class="grid-content">EDNA Recommends</h3></div>';
   recirculation = recirculation + '<div class="grid-block small-up-1 medium-up-3 ng-scope">';
   for(i = 0; i < 3; i++){
     recirculation = recirculation + generate_recirc_template(datas, i);
