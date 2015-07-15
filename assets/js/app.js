@@ -24,6 +24,8 @@ function load_trending_topics(){
       $story_container.append(story_el);
     }
     $('.recommended-stories li').on('click', function(e){
+      $('.recommended-stories li').removeClass('selected');
+      $(this).addClass('selected');
       clicked_recommended(e, this);
     });
   });
@@ -50,7 +52,7 @@ function clicked_recommended(e, self){
 }
 
 function generate_trends_template(datas, elN){
-  var template = '<li data-keyword="' + datas[elN] + '"><a href="#"><span class="block-list-label">' + elN + '</span></strong>' + datas[elN] + '</a></li>';
+  var template = '<li data-keyword="' + datas[elN] + '"><a href="#"><span class="block-list-label">' + (elN+1) + '</span></strong>' + datas[elN] + '</a></li>';
   return template;
 }
 
@@ -60,7 +62,8 @@ function generate_recirc_template(response, elN){
   var image = datas[elN]['image_url'];
   var postDate = datas[elN]['pub_date'];
   postDate = postDate.split('T');
-  if (image == ''){ image = 'http://www.newyorker.com/wp-content/assets/dist/img/cartoon-404.png' }
+  if (image == ''){ image = 'http://placemi.com/320x240' }
+  if (image.split('online/blogs').length > 1 ){ image = 'http://placemi.com/320x240' }
   var template = '<div class="grid-content"><div class=" card"><a href="' + datas[elN]['url'] + '"><img src="' + image + '"><div class="card-section"><h5 class="subtitle">' + postDate + '</h5><h4>' + datas[elN]['title'] + '</h4></div></a></div></div>';
   return template;
 }

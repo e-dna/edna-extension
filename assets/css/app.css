@@ -5,9 +5,40 @@
  *    user zoom.
  */
 
- ul.recommended-stories li {
+ul.recommended-stories li a{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+ul.recommended-stories li {
   background: rgb(255, 255, 255);
 }
+
+.block-list header{
+  color: #2f72eb !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.block-list-label{
+  color: #2f72eb !important;
+}
+
+ul.recommended-stories li:hover a{
+  background: rgba(47, 114, 235, .7) !important;
+  color: #eee !important;
+}
+
+ul.recommended-stories li.selected a{
+  background: #2f72eb !important;
+  color: white !important;
+}
+ul.recommended-stories li.selected .block-list-label{
+  font-weight: bold;
+  color: #fff !important;
+}
+
 
 html {
   font-family: sans-serif;

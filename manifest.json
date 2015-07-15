@@ -47,9 +47,12 @@ components to get you started.",
   "permissions": [
     "tabs",
     "storage",
-    "contextMenus"
+    "contextMenus",
+    "*://use.typekit.net/*",
+    "webRequest",
+    "webRequestBlocking"
   ],
-
+  "content_security_policy": "script-src 'self' https://use.typekit.net; object-src 'self'",
   "web_accessible_resources": [
     "img/*"
   ]
