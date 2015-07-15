@@ -43,8 +43,8 @@ function clicked_recommended(e, self){
   $.ajax({
     url: url,
   }).done(function(datas) {
-    keyword = keyword.split(' ');
-    keyword = keyword.join('+');
+    // keyword = keyword.split(' ');
+    // keyword = keyword.join('+');
     do_on_parsely_return(datas, keyword)
   });
 }
@@ -65,8 +65,6 @@ function generate_recirc_template(response, elN){
   return template;
 }
 
-
-
 function do_on_parsely_return(datas, keyword){
   recirculation = '<div class="grid-block ng-scope"><h1 class="grid-content">' + keyword + '</h1></div>';
   recirculation = recirculation + '<div class="grid-block grid-content small-up-1 medium-up-3 ng-scope text-center"><iframe class="" style="  margin: 0 auto; background: white; height: 370px; width: 100%" src="http://www.google.com/trends/fetchComponent?q=' + keyword + '&cid=TIMESERIES_GRAPH_0&export=5" frameBorder="0"></iframe></div>';
@@ -79,6 +77,6 @@ function do_on_parsely_return(datas, keyword){
 
   template = recirculation;
 
-  $('.grid-frames').css('background', colors[index]);
+  $('.grid-frames').css('background', '#eee');
   $('.grid-frames').html(template);
 }
