@@ -17,8 +17,17 @@ ul.recommended-stories li {
   color: #2f72eb !important;
 }
 
+#sidebar header {
+  margin-top: 10px!important;
+}
+
 h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+header{
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600!important
 }
 
 .block-list-label{
