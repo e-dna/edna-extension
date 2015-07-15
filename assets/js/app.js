@@ -64,7 +64,7 @@ function generate_recirc_template(response, elN){
   postDate = postDate.split('T');
   if (image == ''){ image = 'http://placemi.com/320x240' }
   if (image.split('online/blogs').length > 1 ){ image = 'http://placemi.com/320x240' }
-  var template = '<div class="grid-content"><div class=" card"><a href="' + datas[elN]['url'] + '"><img src="' + image + '"><div class="card-section"><h5 class="subtitle">' + postDate + '</h5><h4>' + datas[elN]['title'] + '</h4></div></a></div></div>';
+  var template = '<div class="grid-content"><div class=" card"><a href="' + datas[elN]['url'] + '"><img src="' + image + '"><div class="card-section"><h5 class="subtitle">' + postDate[0] + '</h5><h4>' + datas[elN]['title'] + '</h4></div></a></div></div>';
   return template;
 }
 
