@@ -5070,3 +5070,8 @@ blockquote p {
   margin-top: 50px;
   font-size: 20px;
 }
+
+.block-list li .block-list-label {
+  min-width: 30px;
+  float: left;
+}
